@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Quiz</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header> 
-        <button id="startbutton"> START</button>
+    <header class="headercon"> 
         <h1>Javascript Quiz</h1>
-        <div class="container">
-            <h2 id="countdown">Time: </h2>
+        <div class="timecon">
+            <h2 id="countdown">Time left: </h2>
         </div>
     </header>
-    <div>
+    <div class= "questionscon">
         <h2>Question:<span id="question"> </span></h2>
-        <ul id="answercontainer">
+        <ul id="answercon">
             <li>A:<span id="answer"> </span></li>
             <li>A:<span id="answer"> </span></li>
             <li>A:<span id="answer"> </span></li>
             <li>A:<span id="answer"> </span></li>
         </ul>
-        <div id="rightwrongcontainer">
+        <div id="rightwrongcon">
             <h3>Your answer is:<span id="rightwrong"> </span></h3>
         </div>
     </div>
+    <div class="buttoncon"> 
+        <button id="startbutton"> CLICK TO START</button>
+    </div>
+    
     <script src="./script.js"></script>
 </body>
 </html>

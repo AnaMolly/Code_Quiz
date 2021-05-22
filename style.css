@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1;
+    width: 100%;
+}
+html{
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: lightslategrey;
+}
+
+button{
+    background: none;
+    color: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+
+.headercon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+}
+
+.headercon h1 {
+    font-weight: 200;
+    padding: 30px;
+    font-size: 60px;
+    color:black;
+    letter-spacing: 2px;
+}
+.timecon h2{
+    font-weight: 100;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.questionscon{
+    display: flex;
+    flex-direction: column;
+    padding: 50px; 
+    margin: 20px 80px 80px 80px;
+    border: solid thin black;
+    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4); 
+}
+
+.questionscon h2{
+   padding: 20px;
+    font-weight: 200;
+}
+.questionscon ul li {
+    padding: 10px;
+    font-weight: 200;
+    margin:10px;
+}
+#answercon {
+    padding:15px 20px 20px 20px;
+}
+
+#rightwrongcon h3 {
+    padding: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.buttoncon{
+    display: flex;
+    justify-content: center;
+}
+
+#startbutton{
+    padding:10px;
+    font-size: 20px;
+    background-color: rgb(21, 173, 173);
+    color: white;
+    border-width: 3px;
+}
+
+#startbutton:hover{
+    background-color: green;
+}
+
+#answer{
+    border: solid thin rgb(104, 104, 104);
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(21, 173, 173);
+    color: white;
+}
