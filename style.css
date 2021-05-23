@@ -33,24 +33,26 @@ button{
 
 .headercon {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    padding: 10px 30px 30px 30px;
+    padding: 30px 30px 0px 30px;
 }
 
-.headercon h1 {
+h1 {
+    text-align: center;
     font-weight: 200;
     padding: 30px;
     font-size: 60px;
     color:black;
     letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 .timecon h2{
     font-weight: 100;
     font-family: monospace;
     font-size: 30px;
-    margin: 20px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .questionscon{
@@ -71,6 +73,18 @@ button{
     font-weight: 200;
     margin:10px;
 }
+.answer{
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(21, 173, 173);
+    color: white;
+}
+
+.answer:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
 #answercon {
     padding:15px 20px 20px 20px;
 }
@@ -82,33 +96,39 @@ button{
 }
 .buttoncon{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #startbutton{
     padding:10px;
-    font-size: 20px;
-    background-color: rgb(21, 173, 173);
+    font-size: 25px;
+    background-color: rgb(4, 163, 4);
     color: white;
     border-width: 3px;
+    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4)
 }
-
 #startbutton:hover{
-    background-color: green;
+    background-color:rgb(17, 146, 5);
+    cursor: pointer;
 }
 
-
-#answer{
-    border: solid thin rgb(104, 104, 104);
-    border-radius: 20%;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgb(21, 173, 173);
-    color: white;
-}
 
 #countdown{
     font-size: 30px;
     font-weight: 200;
     color: red;
+}
+
+#highscorebutton{
+    padding:10px;
+    font-size: 15px;
+    background-color:rgb(255, 239, 14);
+    color: black;
+    border-width: 3px;
+    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4)
+}
+
+#highscorebutton:hover{
+    background-color:rgb(226, 204, 2);
+    cursor: pointer;
 }

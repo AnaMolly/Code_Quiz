@@ -9,25 +9,28 @@
 </head>
 <body>
     <header class="headercon"> 
-        <h1>Javascript Quiz</h1>
-        <div class="timecon">
-            <h2 id="timeleft">Time left: <span id="countdown">  </span> </h2>
+        <div class="buttoncon1"> 
+            <button id="highscorebutton"> HIGH SCORES</button>
         </div>
     </header>
+    <h1>Javascript Quiz</h1>
+    <div class="timecon">
+        <h2 id="timeleft">Time left: <span id="countdown">  </span> </h2>
+    </div>
     <div class= "questionscon">
         <h2>Question:<span id="question"> </span></h2>
         <ul id="answercon">
-            <li>A:<span id="answer"> </span></li>
-            <li>A:<span id="answer"> </span></li>
-            <li>A:<span id="answer"> </span></li>
-            <li>A:<span id="answer"> </span></li>
+            <li>A:<span class="answer" data-number="1"> </span></li>
+            <li>B:<span class="answer" data-number="2"> </span></li>
+            <li>C:<span class="answer" data-number="3"> </span></li>
+            <li>D:<span class="answer" data-number="4"> </span></li>
         </ul>
         <div id="rightwrongcon">
             <h3>Your answer is:<span id="rightwrong"> </span></h3>
         </div>
     </div>
     <div class="buttoncon"> 
-        <button id="startbutton"> CLICK TO START</button>
+        <button id="startbutton"> START</button>
     </div>
     
     <script src="./script.js"></script>
