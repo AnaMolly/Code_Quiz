@@ -33,9 +33,13 @@ button{
 
 .headercon {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 30px 0px 30px;
+}
+
+.headercon p{
+    font-size: 20px;
 }
 
 h1 {
@@ -46,6 +50,13 @@ h1 {
     color:black;
     letter-spacing: 2px;
     margin-bottom: 20px;
+}
+.scorecon{
+    font-weight: 100;
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 .timecon h2{
     font-weight: 100;
@@ -59,7 +70,7 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 50px; 
-    margin: 20px 80px 80px 80px;
+    margin: 20px 80px 30px 80px;
     border: solid thin black;
     box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4); 
 }
@@ -126,6 +137,8 @@ h1 {
     font-weight: 200;
     color: red;
 }
+
+
 
 #highscorebutton{
     padding:10px;

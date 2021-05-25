@@ -1,17 +1,17 @@
 var timer = document.getElementById("countdown");
+var score = document.getElementById("score");
 var startButton = document.getElementById("startbutton");
 var question = document.getElementById ("question");
-var choiceA = document.getElementById("butA");
-var choiceB = document.getElementById("butB");
-var choiceC = document.getElementById("butC");
-var choiceD = document.getElementById("butD");
+var choice1 = document.getElementById("but1");
+var choice2 = document.getElementById("but2");
+var choice3 = document.getElementById("but3");
+var choice4 = document.getElementById("but4");
 var rightWrong = document.getElementById("rightwrong");
 var answerCont = document.querySelector(".answercont")
 
 var currentQuestion = 0;
-rightWrong.innerHTML = ""
-var secondsLeft = 60;
-
+var secondsLeft = 50;
+var scoreCount = 0; 
 var allQuestions = [
     {
         question: '  Inside which HTML element do we place the Javascript link?',
@@ -113,47 +113,47 @@ var allQuestions = [
     
 ]
 
-function startGame() {
-    
-    setTime();
-    nextQuestion();
-    
-    
 
+rightWrong.innerHTML = ""
+
+
+function startGame() {
+
+    setTime();
+    nextQuestion();   
+
+  
     function nextQuestion(){
-        
         question.innerHTML = allQuestions[currentQuestion].question;
-        choiceA.innerHTML = allQuestions[currentQuestion].answer1;
-        choiceB.innerHTML = allQuestions[currentQuestion].answer2;
-        choiceC.innerHTML = allQuestions[currentQuestion].answer3;
-        choiceD.innerHTML = allQuestions[currentQuestion].answer4;
+        choice1.innerHTML = allQuestions[currentQuestion].answer1;
+        choice2.innerHTML = allQuestions[currentQuestion].answer2;
+        choice3.innerHTML = allQuestions[currentQuestion].answer3;
+        choice4.innerHTML = allQuestions[currentQuestion].answer4;
     }    
         
 
     answerCont.addEventListener ("click", function(event){
-       
         var userResponse = event.target.innerHTML;
-
-
+        
         if (userResponse == allQuestions[currentQuestion].correct){
             rightWrong.innerHTML = "Correct!";
             rightWrong.style.color = "green";
             rightWrong.style.fontSize = "30px";
+            scoreCount += 50;
 
         } else {
-
             rightWrong.innerHTML = "Wrong!";
             rightWrong.style.color = "red";
             rightWrong.style.fontSize = "30px";
             secondsLeft -= 15;
         }
-        console.log(allQuestions[currentQuestion].correct)
         
+        score.textContent = scoreCount
         currentQuestion++;
         nextQuestion();
-
     });
 
+    
     function setTime() {
         
         startButton.style.visibility='hidden';
@@ -173,6 +173,11 @@ function startGame() {
         }, 800);
         
     };
+
+   // function endGame ();
+
+    
+
 }
    
 
