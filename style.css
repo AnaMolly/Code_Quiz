@@ -30,7 +30,6 @@ button{
     letter-spacing: 2px;
 }
 
-
 .headercon {
     display: flex;
     justify-content: space-between;
@@ -117,11 +116,11 @@ h1 {
 }
 
 #startbutton{
-    padding:10px;
+    padding:15px;
     font-size: 25px;
     background-color: rgb(4, 163, 4);
     color: white;
-    border-width: 3px;
+    border: solid 1px rgb(141, 139, 139);
     box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4);
     margin-bottom: 60px;
 }
@@ -138,19 +137,91 @@ h1 {
     color: red;
 }
 
-
-
 #highscorebutton{
     padding:10px;
-    font-size: 15px;
+    font-size: 17px;
+    letter-spacing: 2px;
     background-color:rgb(255, 239, 14);
     color: black;
-    border-width: 3px;
+    border: solid 1px rgb(141, 139, 139);
     box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4)
 }
 
 #highscorebutton:hover{
     background-color:rgb(226, 204, 2);
     cursor: pointer;
-    transform: scale(1.04);
+}
+
+.highscorecon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 100px 400px 100px 400px;
+    background-color: rgb(21, 173, 173);
+}
+
+.highscorecon h1{
+    color:white;
+    font-weight: 200;
+    margin: 20px;
+}
+.highscorecon p {
+    font-size: 100px;
+    font-weight: 200;
+    margin: 0px 40px 40px 40px;
+}
+
+#highscoreform{
+    text-align: center;
+}
+
+input[type=text]{
+    font-style: italic;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(21, 173, 173);
+    border:none;
+}
+input[type=text]::placeholder{
+    color: rgb(189, 189, 189);
+    font-size: 20px;
+}
+
+input[type=submit]{
+    font-size: 20px;
+    padding: 10px;
+    margin: 30px;
+    background-color: white;
+    border:none;
+    color:rgb(21, 173, 173);
+    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4);
+}
+
+
+input[type=submit]:hover{
+    background-color:rgb(243, 243, 104);
+    color:black;
+    cursor: pointer;
+}
+
+
+#highscoreform h2{
+    font-size: 40px;
+    font-weight: 200;
+    font-style:italic;
+    padding: 10px 10px 30px 10px;
+}
+
+
+.highscorebody a {
+    font-size: 30px;
+    font-weight: 200;
+    padding:15px;
+    margin:60px;
+    color:teal;
+    background-color:rgb(207, 247, 144);
+    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4);
+
 }
