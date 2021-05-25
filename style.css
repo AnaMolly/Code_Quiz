@@ -65,25 +65,31 @@ h1 {
 }
 
 .questionscon h2{
-   padding: 20px;
+    padding: 20px 10px 20px 10px;
     font-weight: 200;
+    text-align: center;
 }
 .questionscon ul li {
     padding: 10px;
     font-weight: 200;
     margin:10px;
 }
-.answer{
-    border-radius: 20%;
+.answercont{
+    display: flex;
+    flex-direction: column;
+}
+.answers{
     padding: 10px;
     margin: 10px;
     background-color: rgb(21, 173, 173);
     color: white;
+    font-size: 20px;
+    border: none;
 }
 
-.answer:hover{
+.answers:hover{
     cursor: pointer;
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
 #answercon {
     padding:15px 20px 20px 20px;
@@ -105,11 +111,13 @@ h1 {
     background-color: rgb(4, 163, 4);
     color: white;
     border-width: 3px;
-    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4)
+    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4);
+    margin-bottom: 60px;
 }
 #startbutton:hover{
     background-color:rgb(17, 146, 5);
     cursor: pointer;
+    transform: scale(1.08);
 }
 
 
@@ -131,4 +139,5 @@ h1 {
 #highscorebutton:hover{
     background-color:rgb(226, 204, 2);
     cursor: pointer;
+    transform: scale(1.04);
 }
