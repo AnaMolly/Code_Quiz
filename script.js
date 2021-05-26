@@ -162,22 +162,27 @@ function startGame() {
           secondsLeft--;
           timer.textContent = secondsLeft;
 
-          if(secondsLeft === 0) {
+          if(secondsLeft <= 0) {
             clearInterval(timerInterval);
             timer.textContent = "Time is up!";
             timer.style.color = "red";
             startButton.style.visibility='visible';
+            setScore();
+            goToScore();
           }
-
-      
         }, 800);
         
     };
 
-   // function endGame ();
+    function setScore(){
+        score = scoreCount;
+        localStorage.setItem("score", JSON.stringify(score))
+    }
 
-    
-
+   
+    function goToScore (){
+        window.location.href = "./score.html";         
+    }
 }
    
 
