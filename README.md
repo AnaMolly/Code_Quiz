@@ -7,6 +7,7 @@ This Javascript quiz was created by myself(Analia). HTML, CSS and JS were utiliz
 - There are two HTML files used in the making of this quiz.
 - The first one, index.hml, was used to develop the inital quiz page. This html page contains the main heading, a score tracker, a timer, a start button as well as the questions and answer choices, and a section that lets the user know if their answer was right or wrong.
 - The first half of the second html file, score.html, includes a heading, the score the person recieved, an input field to submit their score along with their initials. There is also a play again button.  The second half of the file contains another heading and an unordered list (that has list items later appended to it) as well as another play again button.
+- ** Experienced issues with the play again button not redirecting to the index.html page once the github site was published. In order to fix this, the links for the 'play again' buttons were replaced with the deployed github url as opposed to the index.html page. This seemed to work.**
 
 # CSS files
 - This CSS file styles all components included in both HTML files.
