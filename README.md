@@ -21,3 +21,4 @@ This Javascript quiz was created by myself(Analia). HTML, CSS and JS were utiliz
 ![](Screenshot.png)
 
 # Deployed URL 
+https://anamolly.github.io/Code_Quiz/
