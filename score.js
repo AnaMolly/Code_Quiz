@@ -4,7 +4,7 @@ var highscoreForm = document.getElementById("highscoreform")
 
 
 var recentScore =  JSON.parse(localStorage.getItem("score"));
-var highscores = []
+
 
 function displayScore(){
     highscore.innerHTML = recentScore;
@@ -12,18 +12,17 @@ function displayScore(){
 
 displayScore();
 
-function init(){
-    var lastInput = JSON.parse(localStorage.getItem("highscores"))
-    if (lastInput !== null){
-        highscores.push(lastInput)
-        
-    }
-    
-}
 
 
 highscoreForm.addEventListener("submit", function(event){
     event.preventDefault();
+
+    var highscores=[]
+    var lastInput = JSON.parse(localStorage.getItem("highscores"));
+    if(lastInput !== null){
+        highscores.push(lastInput);
+    }
+
 
     var formInput = {
     initials: userInitials.value,
@@ -39,4 +38,4 @@ highscoreForm.addEventListener("submit", function(event){
 });
 
 
-init();
+
