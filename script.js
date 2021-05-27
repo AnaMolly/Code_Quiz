@@ -141,11 +141,14 @@ function startGame() {
             rightWrong.style.fontSize = "30px";
             scoreCount += 50;
 
-        } else {
+        } else if(userResponse !== allQuestions[currentQuestion].correct){
             rightWrong.innerHTML = "Wrong!";
             rightWrong.style.color = "red";
             rightWrong.style.fontSize = "30px";
             secondsLeft -= 15;
+
+        } else {
+            return
         }
         
         score.textContent = scoreCount

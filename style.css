@@ -17,10 +17,7 @@ ul {
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: lightslategrey;
-}
+
 
 button{
     background: none;
@@ -30,17 +27,6 @@ button{
     letter-spacing: 2px;
 }
 
-.headercon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 30px 0px 30px;
-}
-
-.headercon p{
-    font-size: 20px;
-}
-
 h1 {
     text-align: center;
     font-weight: 200;
@@ -48,7 +34,7 @@ h1 {
     font-size: 60px;
     color:black;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin: 30px;
 }
 .scorecon{
     font-weight: 100;
@@ -137,20 +123,6 @@ h1 {
     color: red;
 }
 
-#highscorebutton{
-    padding:10px;
-    font-size: 17px;
-    letter-spacing: 2px;
-    background-color:rgb(255, 239, 14);
-    color: black;
-    border: solid 1px rgb(141, 139, 139);
-    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4)
-}
-
-#highscorebutton:hover{
-    background-color:rgb(226, 204, 2);
-    cursor: pointer;
-}
 
 .highscorecon{
     display: flex;
@@ -158,8 +130,9 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 100px 400px 100px 400px;
+    margin: 100px 200px 100px 200px;
     background-color: rgb(21, 173, 173);
+    padding:40px;
 }
 
 .highscorecon h1{
@@ -171,6 +144,17 @@ h1 {
     font-size: 100px;
     font-weight: 200;
     margin: 0px 40px 40px 40px;
+}
+.highscorecon a{
+    font-size: 30px;
+    font-weight: 200;
+    padding:15px;
+    margin:60px;
+    color:teal;
+    background-color:rgb(207, 247, 144);
+    box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4);
+    text-decoration: none;
+    
 }
 
 #highscoreform{
@@ -215,7 +199,36 @@ input[type=submit]:hover{
 }
 
 
-.highscorebody a {
+
+.highscorebody {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+#scorelist{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+#secondplaybut {
+   justify-content: center;
+}
+#scoredisplaycon {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 173, 173);
+    border: solid thin teal;
+    align-items: center;
+    border-radius: 70%;
+    margin:60px;
+}
+
+#scoredisplaycon a{
     font-size: 30px;
     font-weight: 200;
     padding:15px;
@@ -223,5 +236,20 @@ input[type=submit]:hover{
     color:teal;
     background-color:rgb(207, 247, 144);
     box-shadow: 8px 8px 10px rgba(109, 109, 109, 0.4);
-
+    text-decoration: none;
+    text-align: center;
+    margin: 50px 200px 200px 200px;
+}
+#scoredisplaycon h1{
+    color: white;
+    padding: 80px 80px 20px 80px;
+    font-style: italic;
+    text-decoration: underline solid white;
+}
+#scorelist li{
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(21, 173, 173);
+    color: white;
+    
 }

@@ -9,19 +9,22 @@
 </head>
 <body class="highscorebody">
     <div class="highscorecon">
-        <h1> Your highscore:</h1>
+        <h1 id=> Your highscore:</h1>
         <p id="highscore">0</p>
         <form id="highscoreform"> 
-            <h2> Enter your initials below to save your highscore!</h2>
+            <h2> Enter your initials below to save your high score!</h2>
             <input type="text" id="initials" placeholder="Enter your initials">
             <input type="submit" id="submitbut" value="Submit">
         </form>
         <a href="/index.html"> Play Again</a>
     </div>
     <div id="scoredisplaycon">
+        <h1>High Scores:</h1>
         <ul id="scorelist">
         </ul>
+        <a id="secondplaybut" href="/index.html"> Play Again</a>
     </div>
+    
     <script src="./score.js"></script>
 </body>
 </html>
