@@ -16,6 +16,7 @@ function init(){
     var lastInput = JSON.parse(localStorage.getItem("highscores"))
     if (lastInput !== null){
         highscores.push(lastInput)
+        
     }
     
 }
