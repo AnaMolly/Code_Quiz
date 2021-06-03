@@ -1,6 +1,6 @@
 # Code Quiz
 
-This Javascript quiz was created by myself(Analia). HTML, CSS and JS were utilized in order to populate the quiz answer and question, the high score submit page as well as the final high scores page.
+This Javascript quiz was created using HTML, CSS and JS. The quiz populates questions and four answers (one of them being correct), the high score submit page as well as the final high scores page.
 
 # HTML files
 
